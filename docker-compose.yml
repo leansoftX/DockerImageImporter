@@ -26,4 +26,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.dotnet.2.1-aspnetcore-runtime
+  dotnet-2.1-sdk:
+    image: microsoft/dotnet:2.1-sdk
+    build:
+      context: .
+      dockerfile: Dockerfile.dotnet.2.1-sdk
   
