@@ -11,3 +11,19 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.postgres
+  node:
+    image: lib/node:lts
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+  golang:
+    image: lib/golang:1.8
+    build:
+      context: .
+      dockerfile: Dockerfile.golang
+  dotnet-2.1-aspnetcore-runtime:
+    image: microsoft/dotnet:2.1-aspnetcore-runtime
+    build:
+      context: .
+      dockerfile: Dockerfile.dotnet.2.1-aspnetcore-runtime
+  
