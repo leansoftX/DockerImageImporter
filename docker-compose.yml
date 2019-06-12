@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: dockerfile.redis
   db:
-    image: postgres
+    image: lib/postgres
     build:
       context: .
       dockerfile: dockerfile.postgres
