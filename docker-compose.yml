@@ -31,4 +31,14 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.dotnet.2.1-sdk
+  mongo-3.4:
+    image: lib/mongo:3.4
+    build:
+      context: .
+      dockerfile: Dockerfile.mongo-3.4
+  mssql-server-linux:
+    image: microsoft/mssql-server-linux
+    build:
+      context: .
+      dockerfile: Dockerfile.mssql-server-linux
   
