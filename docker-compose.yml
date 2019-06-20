@@ -41,4 +41,14 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.mssql-server-linux
+  rabbitmq-3-management:
+    image: lib/rabbitmq:3-management
+    build:
+      context: .
+      dockerfile: Dockefile.rabbitmq.3-management
+  java-8-jre:
+    image: lib/java:8-jre
+    build:
+      context: .
+      dockerfile: Dockefile.java-8-jre
   
