@@ -50,5 +50,5 @@ services:
     image: lib/java:8-jre
     build:
       context: .
-      dockerfile: Dockefile.java-8-jre
+      dockerfile: Dockerfile.java-8-jre
   
